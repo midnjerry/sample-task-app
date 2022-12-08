@@ -1,0 +1,11 @@
+<div class="card">
+  <div>
+    <h1>{{ task.title }}</h1>
+  </div>
+  <div>
+    <div class="action">
+      <input type="checkbox" [checked]="task.completed" (click)="onCheckboxClick()" />
+      <button (click)="onDeleteClick()">X</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<form>
+    <label>Title:</label>
+    <input type="text">
+    <button type="button" (click)="createTask()">Create Task</button>    
+</form>
+
+<div *ngFor="let task of taskList">
+    <app-task-card [task]="task" onDeleteClick="delete($event)" onCheckboxClick="update($event)" ></app-task-card>
+</div>
+
+
